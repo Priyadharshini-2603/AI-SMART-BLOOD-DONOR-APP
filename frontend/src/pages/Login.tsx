@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault()
     // Mock authentication check
     try {
-      const res = await fetch('http://localhost:8080/api/auth/login', {
+      const res = await fetch('https://ai-smart-blood-donor-app.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
