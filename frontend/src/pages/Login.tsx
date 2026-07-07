@@ -37,7 +37,7 @@ export default function Login() {
     // Mock MFA verification (OTP: 123456)
     if (mfaCode === '123456') {
        // Proceed with login
-       fetch('http://localhost:8080/api/auth/login', {
+       fetch('https://ai-smart-blood-donor-app.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
